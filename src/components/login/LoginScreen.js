@@ -8,19 +8,22 @@ export const LoginScreen = ({ history }) => {
 
     const handleLogin = () => {
 
+        const lastPath = localStorage.getItem('lastPath') || '/';
+
         dispatch({
             type: types.login,
             payload: {
                 name: 'Julio'
             }
-        })
+        });
 
-        history.replace('/');
+        history.replace(lastPath);
+
     }
 
     return (
         <div className="container mt-5">
-            <h1>LoginScreen</h1>
+            <h1>Login</h1>
             <hr />
 
             <button
@@ -29,6 +32,7 @@ export const LoginScreen = ({ history }) => {
             >
                 Login
             </button>
+
         </div>
     )
 }
