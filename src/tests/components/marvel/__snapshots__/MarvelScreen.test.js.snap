@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <MarvelScreen /> Should be displayed correctly 1`] = `
+<div>
+  <h1>
+    MarvelScreen
+  </h1>
+  <hr />
+  <HeroList
+    publisher="Marvel Comics"
+  />
+</div>
+`;
