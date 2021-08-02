@@ -11,8 +11,8 @@ export const Navbar = () => {
     const history = useHistory();
 
     const handleLogout = () => {
-        dispatch({ type: types.logout });
         history.replace('/login');
+        dispatch({ type: types.logout });
     };
 
     return (
